@@ -1,6 +1,8 @@
 const productContainer = document.getElementById("container");
+const LoaderContainer = document.getElementById("loaderContainer");
 
 const searchInput = document.getElementById("search-input");
+
 const gridViewButton = document.getElementById("grid-view");
 const listViewButton = document.getElementById("list-view");
 
@@ -14,7 +16,7 @@ async function fetchProducts() {
     );
     const data = await response.json();
     products = data.data;
-
+    productContainer.removeChild(LoaderContainer);
     displayProducts(products);
   } catch (error) {
     console.error("Error fetching data:", error);
@@ -27,7 +29,7 @@ function displayProducts(filterProducts) {
     let display = `<div class="card">
         <div class="icon">
           <p class='newTag'>${product.product_badge}</p>
-          <img src="${product.product_image}" alt="Image is not Fetching from URL">
+          <img src="${product.product_image}" alt="Image is not Fetching from URL" class="image">
         </div>
         <div class="card-body">
           <h2 class="title">${product.product_title}</h2>
