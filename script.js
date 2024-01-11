@@ -29,7 +29,7 @@ function displayProducts(filterProducts) {
     let display = `<div class="card">
         <div class="icon">
           <p class='newTag'>${product.product_badge}</p>
-          <img src="${product.product_image}" alt="Image is not Fetching from URL" class="image">
+          <img src="${product.product_image}" alt="Image is not Fetching from URL" >
         </div>
         <div class="card-body">
           <h2 class="title">${product.product_title}</h2>
