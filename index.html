@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Product Listing</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>PLP</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Type something to search ..."
+        />
+        <button id="list-view">
+          <span class="view-icon">
+            <img
+              src="https://res.cloudinary.com/sachinbalagam/image/upload/v1704943912/uobbgojq71evjf7pnp0h.png"
+              alt="list-icon"
+            />
+          </span>
+        </button>
+        <button id="grid-view">
+          <span class="view-icon">
+            <img
+              src="https://res.cloudinary.com/sachinbalagam/image/upload/v1704943885/t9nmcgbevh3duensxysu.png"
+              alt="grid-icon"
+            />
+          </span>
+        </button>
+      </div>
+    </header>
+    <main class="listView" id="container"></main>
+    <script src="./script.js"></script>
+  </body>
+</html>
